@@ -11,13 +11,7 @@ import { InfoPagina } from '../../interfaces/info-pagina.interface';
 })
 export class HeaderComponent implements OnInit {
 
-  _service: InfoPaginaService;
-
-  constructor( public infoPaginaService: InfoPaginaService ) { 
-  	this._service = infoPaginaService;
-  	console.log('hola');
-  	console.log(this._service);
-  	console.log(infoPaginaService.info);
+  constructor( public _service: InfoPaginaService ) { 
   }
 
   ngOnInit() {
