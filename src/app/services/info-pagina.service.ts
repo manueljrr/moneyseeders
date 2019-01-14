@@ -16,8 +16,6 @@ export class InfoPaginaService {
   cargada = false;
 
   constructor( private http: HttpClient ) { 
-  	console.log("Info pagina listo");
-
     this.loadInfo();
 
     this.loadEquipo();
