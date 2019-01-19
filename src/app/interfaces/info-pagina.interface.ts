@@ -10,7 +10,9 @@ export interface InfoPagina {
 	twitter?: string;
 	instagram?: string;
 	tumblr?: string;
-	equipo_trabajo?: any[];
+	about?: string;
+	mision?: string;
+	clients?: string;
 }
 
 
