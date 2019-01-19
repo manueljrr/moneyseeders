@@ -55,3 +55,15 @@ svg rect{
   animation-name: fadeIn;
 }
 
+
+/* IMG STYLES HOW IT WORKS */
+
+.img-height-3{}
+
+.rk-logo img {
+  max-height: 70px;
+}
+
+
+
+

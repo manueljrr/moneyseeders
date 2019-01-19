@@ -1,5 +1,5 @@
   <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-
+    <h1>Invierte en empresas eco-friendly</h1>
     <!-- 1 -->
     <div *ngIf="_service.cargando" align="center">
       <h3>Cargando...</h3>
@@ -24,15 +24,28 @@
       <p>Pro favor espere...</p>
     </div>
 
-    <div *ngIf="!_service.cargando" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-      <div [hidden]="!_service.cargando" class="loader loader--style1" title="0"></div>
+<!--     <div *ngIf="!_service.cargando" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">      
 
-      <a *ngFor="let producto of _service.list" [routerLink]="['/item', producto.cod]" class="animated fadeIn rk-item ae-masonry__item"><img src="assets/productos/{{ producto.url }}.jpg" alt="">
+      <a *ngFor="let company of _service.list" [routerLink]="['/item', company.cod]" class="animated fadeIn rk-item ae-masonry__item"><img src="{{ company.logo }}" alt="">
         <div class="item-meta">
-          <h2>{{ producto.titulo }}</h2>
-          <p>{{ producto.categoria }}</p>
+          <h2>{{ company.name }}</h2>
+          <p>{{ company.sector }}</p>
         </div>
       </a>
 
     </div>
+ -->
+    <div *ngIf="!_service.cargando" class="ae-grid"> 
+       <!-- first column -->
+       <div *ngFor="let company of _service.list" [routerLink]="['/item', company.cod]" class="ae-grid__item item-lg-4"> 
+         <a href="item-url" class="rk-item">
+           <img src="{{ company.logo }}" />
+           <span class="item-meta">
+             <h2>{{ company.name }}</h2>
+             <p>{{ company.sector }}</p>
+           </span>
+         </a>
+       </div>
+        
+    </div>    
   </section>
