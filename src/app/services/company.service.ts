@@ -34,7 +34,8 @@ export class CompanyService {
 	}
 
 	public getCompany( id: string) {
-		return this.http.get(`https://portfolio-db-6e327.firebaseio.com/companies/${ id }.json`);
+		console.log('aqui estoy');
+		return this.http.get(`https://portfolio-db-6e327.firebaseio.com/company-details/${ id }.json`);
 	}
 
 	public filterCompany( texto: string) {

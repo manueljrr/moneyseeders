@@ -1,0 +1,33 @@
+{
+  "adidas" : {
+    "desc1": "Adidas (estilizado como adidas) es una compañía multinacional Alemana fundada en 1949 dedicada a la fabricación de calzado, ropa deportiva y otros productos relacionados con el deporte y la moda (bolsos, camisas, relojes, anteojos, etc.), y patrocinadora de eventos y figuras deportivas a nivel mundial.",
+    "desc2": "Es uno de los mayores proveedores de material deportivo, con unos ingresos de más de 14 534 millones de dólares estadounidenses y un total en 2014 de unos 60 000 empleados. La marca por sí sola tiene un valor de 6800 millones de dólares estadounidenses, lo que la convierte en la segunda marca más valiosa entre las corporaciones deportivas.",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-db-6e327.appspot.com/o/companies%2Fadidas.png?alt=media&token=6e2f6f33-024d-40f9-94c7-762f575f38b9",
+    "name": "Adidas",
+    "sector": "Artículos personales y domésticos"
+  },
+  "airbus" : {
+    "country": "Países Bajos",
+    "desc1": "Airbus Group SE es una corporación industrial registrada en los Países Bajos que es la más importante de la Unión Europea dentro del segmento de negocio de la aviación y el espacio y el mayor grupo aeroespacial del mundo, disputando el primer puesto con Boeing.",
+    "desc2": "En 2015, EADS empleaba a más de 136.000 personas en más de 70 centros productivos alrededor del mundo. La sede social oficial de la compañía está situada en Leiden (Países Bajos), pero la sede operativa se encontraba dividida entre París, Francia, y Ottobrunn, al sur de Múnich (Alemania). Tras ser renombrada como Airbus Group, la sede operativa fue trasladada de París y Múnich a Toulouse (Francia) el 1 de enero de 2014, manteniendo la sede legal en Leiden.",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-db-6e327.appspot.com/o/companies%2Fairbus.png?alt=media&token=1dbb41f2-92bb-412c-a80a-50e664f71b30",
+    "name": "Airbus",
+    "sector": "Bienes industriales y Servicios"
+  },
+  "bayer" : {
+    "country": "Germany",
+    "desc1": "Bayer AG es una empresa químico-farmacéutica alemana fundada en Barmen, Alemania en 1863. Hoy en día, tiene su sede en Leverkusen, Renania del Norte-Westfalia, Alemania. Es bien conocida por su marca original de la aspirina.",
+    "desc2": "Desde 1925 formó parte del conglomerado IG Farben hasta que en 1951, después de la Segunda Guerra Mundial, fue disuelto por los Aliados debido a que utilizó trabajo esclavo en sus procesos de fabricación.",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-db-6e327.appspot.com/o/companies%2Fbayer.png?alt=media&token=2fd81566-7be6-4d7f-87b4-4c115045a8d4",
+    "name": "Bayer",
+    "sector": "Cuidado de la salud"
+  },
+  "bmw" : {
+    "country": "Germany",
+    "desc1": "BMW (siglas en alemán de: Bayerische Motoren Werke, «Fábricas de motores bávara») es un fabricante alemán de automóviles de gama alta y motocicletas, cuya sede se encuentra en Múnich. ",
+    "desc2": "Sus subsidiarias son Mini, Rolls-Royce, y BMW Bank. BMW es el líder mundial en ventas entre los fabricantes de gama alta, compite principalmente con Audi, Volvo, Lexus y Mercedes-Benz, entre otros vehículos de gama alta.",
+    "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-db-6e327.appspot.com/o/companies%2Fbmw.png?alt=media&token=156540c9-cbac-4939-8152-ee7caaa7f910",
+    "name": "BMW",
+    "sector": "Automóviles y Componentes"
+  }
+}

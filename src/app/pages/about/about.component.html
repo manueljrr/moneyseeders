@@ -1,35 +1,46 @@
-      <div class="ae-grid au-xs-ta-center au-mb-4">
-        
-        <div *ngFor="let persona of _infoTeam.equipo" class="animated fadeIn ae-grid__item item-lg-3 ae-kappa au-mb-3">
-          <img src="{{ persona.url }}" alt="" class="au-mb-3">
-          <h5 class="ae-u-bolder au-mt-2">{{ persona.nombre }}</h5>
-          <p class="ae-u-bolder au-mb-3">{{ persona.titulo }}</p>
-          <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{ persona.frase }}</p>
-          <!-- <a target="_blank" href="https://twitter.com/{{ persona.twitter }}" class="ae-u-bolder au-underline">{{ persona.twitter }}</a> -->
+<div class="ae-container-fluid ae-container-fluid--inner rk-main">
+      <div class="ae-grid ae-grid--alt au-xs-ptp-1 card-texto">
+        <div class="ae-grid__item--alt item-lg-4">
+          <h6 class="ae-u-boldest">El equipo</h6>
+          <p class="au-lh-3">{{ _infoTeam.info.about }}</p>
+        </div>
+        <div class="ae-grid__item--alt item-lg-4">
+          <h6 class="ae-u-boldest">Misión y visión</h6>
+          <p class="au-lh-3">{{ _infoTeam.info.mision }}</p>
+        </div>
+        <div class="ae-grid__item--alt item-lg-4">
+          <h6 class="ae-u-boldest">Productos y servicios</h6>
+          <p class="au-lh-3">{{ _infoTeam.info.clients }}</p>
         </div>
       </div>
-
-      <div class="ae-grid au-pt-2">
+<!--       <div class="ae-grid au-pt-2">
         <div class="ae-grid__item item-lg-8 item-lg--offset-2">
           <h4 class="ae-u-bolder">Title example</h4>
           <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
         </div>
       </div>
-      <div class="ae-grid ae-grid--alt au-xs-ptp-1">
-        <div class="ae-grid__item--alt item-lg-4">
-          <h6 class="ae-u-boldest">About Us</h6>
-          <p class="au-lh-3">{{ _infoTeam.info.about }}</p>
-        </div>
-        <div class="ae-grid__item--alt item-lg-4">
-          <h6 class="ae-u-boldest">Our Mission</h6>
-          <p class="au-lh-3">{{ _infoTeam.info.mision }}</p>
-        </div>
-        <div class="ae-grid__item--alt item-lg-4">
-          <h6 class="ae-u-boldest">Our Clients</h6>
-          <p class="au-lh-3">{{ _infoTeam.info.clients }}</p>
+ -->
+      <div class="ae-grid au-xs-ta-center au-mb-4">
+        
+        <div *ngFor="let persona of _infoTeam.equipo" class="animated fadeIn ae-grid__item item-lg-3 ae-kappa au-mb-3">
+          <img src="{{ persona.url }}" alt="" class="au-mb-3 img-circle">
+          <h5 class="ae-u-bolder au-mt-2">{{ persona.nombre }}</h5>
+          <p class="ae-u-bolder au-mb-3">{{ persona.titulo }}</p>
+          <p class="au-lg-ta-left au-mb-3 au-pl-1 au-pr-1 texto-centro">{{ persona.frase }}</p>
+          <!-- <a target="_blank" href="https://twitter.com/{{ persona.twitter }}" class="ae-u-bolder au-underline">{{ persona.twitter }}</a> -->
         </div>
       </div>
-      <p class="au-flex au-pt-4 group-buttons"><a href="/home" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">View Our Portfolio<span class="arrow-cont">
+
+      <div class="ae-grid au-pt-2">
+        <div class="ae-grid__item item-lg-8 item-lg--offset-2 gray-card">
+          <h4 class="ae-u-bolder">Con este equipo todo es posible</h4>
+          <p>No hay problemas complejos, la estrategia está en hacerlo más pequeño.</p>
+        </div>
+      </div>
+      <p class="au-flex au-pt-4 group-buttons">
+        <a href="/home" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">View Our Portfolio<span class="arrow-cont">
             <svg>
               <use xlink:href="assets/img/symbols.svg#arrow"></use>
-            </svg></span></a></p>
+            </svg></span></a>
+      </p>
+</div>

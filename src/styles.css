@@ -58,12 +58,99 @@ svg rect{
 
 /* IMG STYLES HOW IT WORKS */
 
-.img-height-3{}
-
 .rk-logo img {
   max-height: 70px;
 }
 
 
+.how-background {
+  background-image: url("assets/img/how-background.png");
+  background-position: 50% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 25px;
 
+}
+
+@media (min-width: 40em) {
+  .how-background {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.home-background {
+  background-image: url("assets/img/background.jpg");
+  background-position: 50% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-bottom: 12rem;
+  height: 80vh !important;
+}
+
+@media (min-width: 40em) {
+  .home-background {
+    background-size: 150%;
+  }
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.green-title {
+ color: #48a159;
+ text-align: left;
+}
+
+.home-title {
+   color: #48a159;
+  font-size: 3.8rem;
+  text-align: left;
+}
+
+.home-category {
+  text-align: left;
+}
+
+.gray-card {
+  background-color: #f9f7f7;
+  padding: 1.5rem;
+}
+
+.card-texto {
+  margin-bottom: 2.0rem;
+}
+
+.texto-centro {
+  text-align: center;
+}
+
+.margin-top-20 {
+  margin-top: 4.0rem;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+  color: #48a159;
+}
+
+.rk-how-to-cover {
+  background-position: center center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+          align-items: flex-end;
+  height: 80vh;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
 

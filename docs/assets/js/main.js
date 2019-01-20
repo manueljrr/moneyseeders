@@ -26,3 +26,22 @@ function SelectText(element) {
       }
   }
 }
+
+function closeMenu(){
+    document.getElementById("mobile-menu").checked = false;
+
+}
+
+// $('.rk-menu__link').on('click', function () {
+//     console.log('Hola Manu');
+// });
+// $('.rk-menu__link a').on('click', function () {
+//     console.log('Hola Manu');
+// });
+
+// $(document).ready(function() {
+//     $(".rk-menu__link").click(function() {
+//         //Do stuff when clicked
+//         console.log('este si');
+//     });
+// });

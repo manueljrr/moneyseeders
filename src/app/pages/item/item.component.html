@@ -1,16 +1,17 @@
-<section *ngIf="detalles">
-  <header  [ngStyle]="{ 'background-image': 'url(assets/productos/' + id + '/main.jpg' }"
-    class="rk-portfolio-cover  item-inside-1">
+<section *ngIf="detalles" class="ae-container-fluid ae-container-fluid--full">
+  <header  [ngStyle]="{ 'background-image': 'url(assets/img/companies/' + id + '.jpeg)' }"
+      class="rk-portfolio-cover  item-inside-1">
     <div class="item-inside__meta">
-      <h1 class="ae-u-bolder rk-portfolio-title ">{{ detalles.producto }}</h1>
-      <p class="ae-theta rk-portfolio-category ">{{ detalles.categoria }}</p>
+      <h1 class="ae-u-bolder rk-portfolio-title ">{{ detalles.name }}</h1>
+      <p class="ae-theta rk-portfolio-category ">{{ detalles.sector }}</p>
     </div>
   </header>
-
+ 
   <div class="ae-container-fluid">
     <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
       <div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
-        <h2 class="rk-portfolio-inner-title ">{{ detalles.subtitulo1 }}</h2>
+        <h3 class="rk-portfolio-inner-title ">{{ detalles.desc1 }}</h3>
+        <p class="rk-portfolio-inner-title ">{{ detalles.desc2 }}</p>
       </div>
       <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
         <p class="rk-portfolio-inner-client "><span class="ae-lambda">Client: </span><span class="ae-u-bolder">Agency Design Studio</span></p>
@@ -20,6 +21,7 @@
     </div>
   </div>
 
+<!-- 
   <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
     <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
       <div class="ae-grid__item item-lg-5 au-lg-ptp-1">
@@ -43,4 +45,5 @@
       </div>
     </div>
   </div>
+   -->
 </section>

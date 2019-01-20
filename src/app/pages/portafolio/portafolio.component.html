@@ -1,5 +1,90 @@
-  <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-    <h1>Invierte en empresas eco-friendly</h1>
+<section class="ae-container-fluid rk-main ae-container-fluid--full">
+  <!-- <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio"> -->
+  <section class="ae-container-fluid ae-container-fluid--full">
+    <header  class="rk-portfolio-cover  home-background">
+      <div class="item-inside__meta item-lg-4 item-lg--offset-9">
+        <h1 class="ae-u-bolder home-title ae-grid__item ">Tu dinero crece solo</h1>
+        <p class="ae-theta home-category">Con buenas acciones.</p>
+      </div>
+    </header>
+  </section>
+
+  <div class="ae-grid au-xs-ta-center au-mb-4 margin-top-20">
+    <h2 class="ae-u-bolder ae-grid__item section-title">¿Cómo funciona?</h2>
+  </div>
+
+    <header  class="rk-how-to-cover how-background ae-container-fluid">
+      <div class="item-inside__meta">
+        <h1 class="ae-u-bolder rk-portfolio-title "></h1>
+        <p class="ae-theta rk-portfolio-category "></p>
+      </div>
+    </header>
+
+  <!-- TITLE + INFO -->
+<!--   <div class="ae-grid">
+    <div class="ae-grid__item item-lg-8 item-lg--offset-2">
+      <h4 class="ae-u-bolder au-mb-3 conatct__title">Title example</h4>
+      <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+    </div>
+  </div>
+ -->
+  <!-- SHOW INVESTMENT CRITERIA -->
+  <div class="ae-grid au-xs-ta-center au-mb-4 margin-top-20">
+    <h2 class="ae-u-bolder ae-grid__item section-title">Inversión a tu medida</h2>
+    <div class="animated fadeIn ae-grid__item item-lg-3 ae-kappa au-mb-3">
+      <img src="/assets/img/cool-money.jpg" alt="" class="au-mb-3">
+      <h3 class="ae-u-bolder au-mt-2">Cool Money</h3>
+      <p class="ae-u-bolder au-mb-3">Inversión de corto plazo Premiar frecuencia</p>
+
+      <h4><span class="green-title">Propósito</span></h4>
+      <ul class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">
+        <li>Seguridad inversión</li>
+        <li>Rentabilidad inmediata</li>
+      </ul>
+    </div>
+
+    <div class="animated fadeIn ae-grid__item item-lg-3 ae-kappa au-mb-3">
+      <img src="/assets/img/good-money.jpg" alt="" class="au-mb-3">
+      <h3 class="ae-u-bolder au-mt-2">Good Money</h3>
+      <p class="ae-u-bolder au-mb-3">Inversión de largo plazo Premiar antigüedad</p>
+
+      <h4><span class="green-title">Propósito</span></h4>
+      <ul class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">
+        <li>Viabilidad futuro</li>
+        <li>Ahorro eficiente</li>
+      </ul>
+    </div>
+
+    <div class="animated fadeIn ae-grid__item item-lg-3 ae-kappa au-mb-3">
+      <img src="/assets/img/green-money.jpg" alt="" class="au-mb-3">
+      <h3 class="ae-u-bolder au-mt-2">Green Money</h3>
+      <p class="ae-u-bolder au-mb-3">Inversión sostenibilidad Premiar variedad</p>
+
+      <h4><span class="green-title">Propósito</span></h4>
+      <ul class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">
+        <li>Impacto social</li>
+        <li>Impacto ambiental</li>
+      </ul>
+    </div>
+
+    <div class="animated fadeIn ae-grid__item item-lg-3 ae-kappa au-mb-3">
+      <img src="/assets/img/power-money.jpg" alt="" class="au-mb-3">
+      <h3 class="ae-u-bolder au-mt-2">Power Money</h3>
+      <p class="ae-u-bolder au-mb-3">Inversión más riesgo Premiar volumen</p>
+      <h4><span class="green-title">Propósito</span></h4>
+      <ul class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">
+        <li>Impacto nuevos negocios</li>
+        <li>Espirítu emprendedor</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <section class="ae-container-fluid ae-container-fluid--inner margin-top-20">
+    <div class="ae-grid au-xs-ta-center au-mb-4 margin-top-20 ">
+      <h2 class="ae-u-bolder ae-grid__item section-title">Algunas opciones de inversión en empresas con proyectos sostenibles</h2>
+    </div>
     <!-- 1 -->
     <div *ngIf="_service.cargando" align="center">
       <h3>Cargando...</h3>
@@ -35,10 +120,12 @@
 
     </div>
  -->
+
+
     <div *ngIf="!_service.cargando" class="ae-grid"> 
        <!-- first column -->
-       <div *ngFor="let company of _service.list" [routerLink]="['/item', company.cod]" class="ae-grid__item item-lg-4"> 
-         <a href="item-url" class="rk-item">
+       <div *ngFor="let company of _service.list"  class="ae-grid__item item-lg-3"> 
+         <a [routerLink]="['/company', company.cod]" class="rk-item">
            <img src="{{ company.logo }}" />
            <span class="item-meta">
              <h2>{{ company.name }}</h2>
@@ -47,5 +134,9 @@
          </a>
        </div>
         
-    </div>    
+    </div>  
+
+
   </section>
+</section>
+

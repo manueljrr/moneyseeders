@@ -16,7 +16,8 @@
         <!-- <h1 class="rk-logo"><a routerLink="home">{{ _service.info.titulo }}<sup>tm</sup></a></h1> -->
         <nav class="rk-navigation">
           <ul class="rk-menu">
-            <li routerLinkActive="active" class="rk-menu__item"><a routerLink="home" class="rk-menu__link">Home</a>
+            <li routerLinkActive="active" class="rk-menu__item">
+              <a routerLink="home" class="rk-menu__link" onclick="closeMenu();">Home</a>
             </li>
 <!-- 
             <li class="rk-menu__item"><a href="#0" class="rk-menu__link">Pages</a>
@@ -29,9 +30,11 @@
               </nav>
             </li>
  -->            
-            <li routerLinkActive="active" class="rk-menu__item"><a routerLink="how-it-works" class="rk-menu__link">How it works</a>
+            <li routerLinkActive="active" class="rk-menu__item" >
+              <a routerLink="how-it-works" class="rk-menu__link" onclick="closeMenu();">How it works</a>
             </li>
-            <li routerLinkActive="active" class="rk-menu__item"><a routerLink="about" class="rk-menu__link">About</a>
+            <li routerLinkActive="active" class="rk-menu__item">
+              <a routerLink="about" class="rk-menu__link" onclick="closeMenu();">About</a>
             </li>
           </ul>
           <div class="rk-search">

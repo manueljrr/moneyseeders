@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { ActivatedRoute } from '@angular/router';
 
-import { ProductosService } from '../../services/productos.service';
-import { DetalleProducto } from '../../interfaces/detalle-producto.interface';
+import { CompanyService } from '../../services/company.service';
+import { Company } from '../../interfaces/company.interface';
 
 @Component({
   selector: 'app-item',
@@ -12,19 +12,20 @@ import { DetalleProducto } from '../../interfaces/detalle-producto.interface';
 })
 export class ItemComponent implements OnInit {
 
-  detalles: DetalleProducto;
+  detalles: Company;
   id: string;
 
   constructor( private route: ActivatedRoute, 
-  	           public _service: ProductosService ) { }
+  	           public _service: CompanyService ) { }
 
   ngOnInit() {
   	this.route.params.subscribe( parametros => {
 
-  		this._service.getProducto( parametros.id)
-  			.subscribe((producto: DetalleProducto) => {
-  				this.detalles = producto;
+  		this._service.getCompany( parametros.id)
+  			.subscribe((company: Company) => {
+  				this.detalles = company;
   				this.id = parametros.id;
+          console.log(this.detalles);
   			});
   	});
   }
